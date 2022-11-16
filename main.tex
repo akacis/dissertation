@@ -1,0 +1,153 @@
+\documentclass[doctor]{snuee}
+
+% 논문제목을 넣습니다.
+% 필히 한글제목과 영문제목 모두 넣어야 합니다.
+\title[korean]{의료용 신호를 위한 뉴럴네트워크 구조와 훈련방식 연구}
+\title[english]{Neural Network Model and Training for Medical Sensor Signal}
+
+% 저자 정보를 넣습니다.
+% 국문성명, 영문성명 모두 넣어야 하며, 특히 국문성명의 경우는 글자사이에 space가 있는 것과 없는 것
+% 두 가지 모두를 집어넣어줘야 합니다.
+\author[korean]{최 익 수}
+\author[english]{Iksoo Choi}
+\author[nospace]{최익수}
+
+% 지도교수님의 성함을 국문으로 넣습니다.
+\adviser{심 병 효}
+
+% 논문 제출일, 논문 심사일을 한글로 넣습니다.
+\submissiondeadline{2023년 1월} \examinationdate{2022년 12월}
+
+% 졸업일을 영문식, 한글식 두 가지 방법 모두 넣습니다.
+\gradyear[english]{FEBRUARY 2023} \gradyear[korean]{2023년 2월}
+
+%
+
+% 문서의 시작
+%
+% 위의 정보들을 빠짐없이 채워넣고 document를 시작하면
+% 외표지, 내표지(외표지와 동일), 인준지가 자동으로 생성됩니다.
+
+\begin{document}
+\renewcommand{\baselinestretch}{1.5}    % 본문의 줄간격 조정, 고치거나 삭제하지 마십시오.
+\selectfont                             %
+
+% abstract(영문)의 작성
+% begin과 end 사이에 abstract의 내용을 채워넣습니다.
+\begin{abstract}
+	\par %abstract 첫 문장 들여쓰기, 고치거나 삭제하지 마십시오.
+	sleepstage, sleepstage sequence modeling, polysomnography
+	
+	% abstract page 하단에 keyword와 학번을 넣습니다.
+	\vfill
+	\begin{minipage}[t][20mm][b]{\textwidth}
+		{\bfseries keywords}: SNU template, TeX\\
+		{\bfseries student number}: 2014-21751\\
+	\end{minipage}
+	
+\end{abstract}
+
+\changepage{5mm}{}{}{}{}{}{}{}{-5mm}    %%페이지 여백 재설정. 절대 고치거나 삭제하지 마십시오.
+\makelists   %목차를 자동생성합니다.
+
+
+% 본문의 시작
+% chapter, section의 추가,변경등 모두를 자유롭게 할 수 있습니다.
+% 그림, 표의 추가 형식은 MS Word의 형식과 동일합니다. (MS Word Description file 참조)
+%
+
+\input{chapter_1/chap1_introduction.tex}
+
+
+\input{chapter_2/chap2_back-boneModel.tex}
+
+
+\input{chapter_3/chap3_S-SGD.tex}
+
+\input{chapter_4/chap4_SleepstageModel.tex}
+
+\input{chapter_5/chap5_conclusion.tex}
+%
+% 참고문헌을 넣습니다.
+% 샘플의 형식과 같은 차례대로 써줍니다.
+%
+
+%
+
+\begin{thebibliography}{00}
+	
+	% 영문저널의 경우
+	\bibitem{ref1} B. Jeon and J. Jeong, ``Blocking artifacts
+	reduction in image compression with block boundary discontiunity
+	criterion,'' {\em IEEE Transactions on Circuits and Systems for
+		Video Tech.}, vol. 8, no.3, pp. 345-357, June 1998.
+	
+	% 영문학술대회의 경우
+	\bibitem{ref2} W. G. Jeon and Y. S. Cho, ``An equalization
+	technique for OFDM and MC-CDMA in a multipath fading channels,''
+	in {\em Proceedings of IEEE Conference on Acoustics, Speech and
+		Signal Processing}, Munich, Germany, May 1997. pp. 2529-2532.
+	
+	% 국내저널의 경우
+	\bibitem{ref3} 김남훈, 정영철, ``평탄한 통과대역 특성을 갖는
+	새로운 구조의 광도 파로열 격자 라우터,'' {\em 전자공학회논문지},
+	제35권 D편, 제3호, 56-62쪽, 1998년 3월.
+	
+	% 국내학술대회의 경우
+	\bibitem{ref4} 윤남국, 김수종, ``무선 센서 네트워크에서의 에너지
+	효율적인 그라디언트 기반 라우팅 기법,'' {\em 한국정보과학회
+		2006년 추계학술대회}, 제12권, 제2호, 2006년 10월. pp.
+	1372-1374.
+	
+	% 단행본의 경우
+	\bibitem{ref5} C. Mead and L. Conway, {\em Introduction to VLSI
+		Systems}, Addison-Wesley, Boston, 1994.
+	
+	% URL
+	\bibitem{ref6} The SolarMESH Network,
+	http://owl.mcmater.ca/solarmesh
+	
+	% Technical Report의 경우
+	\bibitem{ref7} K. E. Elliott and C. M. Greene, ``A local adaptive
+	protocol,'' Argonne National Laboratory, Argonne, France,
+	Technical Report 916-1010-BB, 1997.
+	
+	% 학위논문의 경우
+	\bibitem{ref8} T. Kim, ``Scheduling and Allocation Problems in
+	High-level Synthesis,'' Ph. D. Dissertation, ECE Department,
+	Univ. of Illinois at U-C, 1993.
+	
+	% 특허의 경우
+	\bibitem{ref9} Sunghyun Choi, ``Wireless MAC protocol based on a
+	hybrid combination of slot allocation, token passing, and
+	polling for isochronous traffic,'' U.S. Patent No. 6,795,418,
+	September 21, 2004.
+	
+	% 표준
+	\bibitem{ref10} IEEE Std. 802.11-1999, Part 11: Wireless LAN
+	Medium Access Control (MAC) and Physical Layer (PHY)
+	specifications, Reference number ISO/IEC 8802-11:1999(E), IEEE
+	Std. 802.11, 1999 edition, 1999.
+	
+\end{thebibliography}
+
+%---------------------------------------------------------------------------------
+% 본문의 종료
+% 국문 초록과 감사의 글(선택)을 넣습니다.
+% begin{summary}와 end{summary}의 사이에 국문초록을 집어넣습니다.
+% 감사의글은 \acknowledgement{}의 대괄호 안에 내용을 넣습니다.
+%
+\begin{summary}
+	\par    %첫 줄 들여쓰기를 위한 단락구분.삭제하지 마십시오.
+	Put your abstract in Korean.
+	\vfill
+	\begin{minipage}[t][20mm][b]{\textwidth}
+		{\bfseries 주요어}: 서울대학교 논문양식, TeX\\
+		{\bfseries 학번}: 2007-2007\\
+	\end{minipage}
+\end{summary}
+\changepage {15mm}{}{}{}{}{-30mm}{}{}{15mm} %초록과 감사의 글을 위한 여백 재설정, 고치거나 삭제하지 마십시오.
+\acknowledgement{
+	\par
+	Put your acknowledgement here.(optional)} %감사의 글을 작성하지 않을경우 삭제가능
+\end{document}
